@@ -1,36 +1,36 @@
 # Swimming Trip 🏊‍♂️🌊
 
-「Swimming Trip」は、日々の水泳トレーニングを「旅（Trip）」に変える、モチベーション維持に特化した水泳ログ＆トレーニング管理アプリです。
+"Swimming Trip" is a swimming log and training management app focused on motivation, turning your daily swimming practice into a "Trip."
 
-## 🌟 主な機能
+## 🌟 Key Features
 
-### 1. マップ連動型進捗管理 (Swimming Trip)
-設定した目標距離（週間・月間・年間）に応じて、マップ上の目的地を目指します。
-- **ルート設定**: マップ上の任意の開始点と終了点を選択し、オリジナルの水泳ルートを作成。
-- **旅の進捗**: 泳いだ距離に応じてアイコンがマップ上を移動。トレーニングの結果が視覚的な「旅の距離」として実感できます。
+### 1. Map-Linked Progress Tracking (Swimming Trip)
+Set your goal distance (Weekly, Monthly, or Yearly) and aim for destinations on the map.
+- **Route Setting**: Select any start and end points on the map to create your original swimming route.
+- **Trip Progress**: Your icon moves along the map according to the distance you've swum. Visualize your training results as a "travel distance."
 
-### 2. 高度なトレーニングメニュー管理
-プロフェッショナルなトレーニングメニューの作成・保存・管理が可能です。
-- **詳細設定**: 泳法（クロール、背泳ぎ、平泳ぎ、バタフライ、個人メドレー）、強度、セクション（Kick, Pull, Drill, Main等）、用具（フィン、パドル等）を細かく設定可能。
-- **自動計算機能**:
-  - **総距離**: メニュー全体の合計距離を自動算出。
-  - **消費カロリー**: METs、体重、泳法、強度を組み合わせた高度なカロリー計算エンジンを搭載。
+### 2. Advanced Training Menu Management
+Create, save, and manage professional-grade training menus.
+- **Detailed Configuration**: Set strokes (Freestyle, Backstroke, Breaststroke, Butterfly, Individual Medley), intensity, sections (Warm-up, Kick, Pull, Drill, Main, etc.), and equipment (Fins, Paddles, etc.).
+- **Automatic Calculations**:
+  - **Total Distance**: Automatically calculates the total distance of the entire menu.
+  - **Calorie Consumption**: Features an advanced calorie calculation engine combining METs, user weight, stroke type, and intensity.
 
-### 3. カレンダー & 統計
-- **トレーニングログ**: 日々の泳いだ距離をカレンダーで管理。
-- **目標管理**: 週間、月間、年間の目標達成度を可視化。
-- **統計グラフ**: 過去のパフォーマンスをチャートで分析。
+### 3. Calendar & Statistics
+- **Training Logs**: Manage your daily swimming distances via a calendar.
+- **Goal Management**: Visualize your achievement rates for weekly, monthly, and yearly goals.
+- **Statistical Graphs**: Analyze your past performance with insightful charts.
 
-### 4. 多言語対応 (21言語)
-日本語をはじめ、英語、スペイン語、フランス語、中国語など、世界中のスイマーが利用できるよう21の言語に対応しています。
+### 4. Multi-language Support (21 Languages)
+Supports 21 languages, including Japanese, English, Spanish, French, and Chinese, so swimmers around the world can use it.
 
-## 📸 スクリーンショット
+## 📸 Screenshots
 
-| マップ画面 | カレンダー画面 | メニュー管理 |
+| Map Screen | Calendar Screen | Menu Management |
 | :---: | :---: | :---: |
 | ![Map](assets/images/map_screenshot.png) | ![Calendar](assets/images/calendar_screenshot.png) | ![Menu](assets/images/menu_screenshot.png) |
 
-## 🛠 テックスタック
+## 🛠 Tech Stack
 
 - **Framework**: [Flutter](https://flutter.dev/) (Dart)
 - **State Management**: `StatefulWidget` & `SharedPreferences`
@@ -41,26 +41,26 @@
 - **Database**: [shared_preferences](https://pub.dev/packages/shared_preferences) (Local storage)
 - **Ads**: [google_mobile_ads](https://pub.dev/packages/google_mobile_ads)
 
-## 🚀 はじめかた
+## 🚀 Getting Started
 
-### 依存関係のインストール
+### Install Dependencies
 ```bash
 flutter pub get
 ```
 
-### 実行
+### Run the App
 ```bash
 flutter run
 ```
 
-## 📝 開発上の注意
+## 📝 Development Notes
 
-### アセットの構成
-- `assets/translations/`: 各言語の翻訳JSONファイル。
-- `assets/images/`: スクリーンショットおよびアイコン。
+### Asset Structure
+- `assets/translations/`: JSON translation files for each language.
+- `assets/images/`: Screenshots and icons.
 
-### カロリー計算ロジック
-本アプリは `lib/training_menu.dart` 内の独自のアルゴリズムを使用しており、泳法別のMETs値に基づいて、ユーザーの体重と運動強度を考慮した計算を行っています。
+### Calorie Calculation Logic
+This app uses a unique algorithm within `lib/training_menu.dart`, calculating calories based on stroke-specific METs values, taking into account user weight and exercise intensity.
 
-## 📄 ライセンス
-このプロジェクトは [MIT License](LICENSE) のもとで公開されています。
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
